@@ -75,7 +75,7 @@ class Game {
       cout << "Do you want to draw another card? (y/n): ";
       cin >> choice;
 
-      if (choice == 'y') {
+      if (choice == 'y' || choice == 'Y') {
         player.drawCard();
         player.displayHand();
 
@@ -86,7 +86,7 @@ class Game {
         } else {
           cout << "Computer stops drawing cards." << endl;
         }
-      } else if (choice == 'n') {
+      } else if (choice == 'n' || choice == 'N') {
         if (computer.score < 17) {
           cout << "\nComputer keeps drawing card after Player selects 'n'"
                << endl;
